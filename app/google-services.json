@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "810776748319",
+    "project_id": "nihao-hub",
+    "storage_bucket": "nihao-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810776748319:android:f63f566b11a795b5c1d02a",
+        "android_client_info": {
+          "package_name": "com.example.nihaohub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz6vntDF8Lm7yQwE7bN-1KAtigYmthb-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NIhaoHub</string>
+    <string name="google_status_fmt">a</string>
+    <string name="firebase_status_fmt">a</string>
+</resources>
