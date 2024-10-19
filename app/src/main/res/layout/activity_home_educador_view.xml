@@ -26,6 +26,13 @@
             android:textSize="40dp"
             android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Conteúdo"
+            android:onClick="CadastrarConteudo"/>
+
         <ListView
             android:id="@+id/conteudosEducador"
             android:layout_width="match_parent"
