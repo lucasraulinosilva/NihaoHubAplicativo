@@ -180,7 +180,7 @@ public class MostrarConteudoController{
                         }
                     }
 
-                    ArrayAdapter<String> adaptador2 = new ArrayAdapter<String>(activity, android.R.layout.simple_list_item_1, comentariosConteudoValor );
+                    ArrayAdapter<String> adaptador2 = new ArrayAdapter<String>(activity, android.R.layout.simple_list_item_1, comentariosConteudoValor);
                     comentariosConteudo.setAdapter(adaptador2);
                     setListViewHeightBasedOnItems(comentariosConteudo);
                 }
@@ -356,7 +356,27 @@ public class MostrarConteudoController{
     }
 
     public void pegarIdEstudante() {
+        mDatabase.child("Estudante").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+                }
+                else {
+                    Gson gson = new Gson();
+                    String json = gson.toJson(task.getResult().getValue());
+                    Estudante[] estudantes = gson.fromJson(json, Estudante[].class);
 
+                    for (int i = 0; i < estudantes.length; i++) {
+                        if (estudantes[i] != null) {
+                            if (estudantes[i].getLoginEstudante().equals(emailUsuario)) {
+                                idUsuario = estudantes[i].getIdEstudante();
+                                nomeUsuario = estudantes[i].getNomeEstudante();
+                            }
+                        }
+                    }
+                }
+            }
+        });
     }
 
     public void pegarIdAdministrador() {

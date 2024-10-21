@@ -76,6 +76,7 @@ public class DetalhesConteudoView extends AppCompatActivity {
             mostrarConteudoController.mostrarDetalhesConteudo();
             mostrarConteudoController.exibirPdf();
             mostrarConteudoController.pegarIdEducador();
+            mostrarConteudoController.pegarIdEstudante();
         }
     }
 
