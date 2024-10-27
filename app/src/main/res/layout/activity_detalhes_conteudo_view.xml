@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".view.DetalhesConteudoView">
 
     <LinearLayout
@@ -21,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="TextView"
             android:textSize="40dp"
@@ -29,7 +32,7 @@
         <WebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="500dp" >
+            android:layout_height="500dp">
 
         </WebView>
 
@@ -48,6 +51,7 @@
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="Autor"
                     android:textSize="30dp"
                     android:textStyle="bold" />
@@ -56,12 +60,14 @@
                     android:id="@+id/autorConteudoDetalhe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="TextView" />
 
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="Tema"
                     android:textSize="30dp"
                     android:textStyle="bold" />
@@ -70,12 +76,14 @@
                     android:id="@+id/temaConteudoDetalhe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="TextView" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="Descrição"
                     android:textSize="30dp"
                     android:textStyle="bold" />
@@ -84,32 +92,18 @@
                     android:id="@+id/descricaoConteudoDetalhe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="TextView" />
 
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#63adf2"
+                    android:fontFamily="@font/poppins"
                     android:onClick="dowloadConteudo"
-                    android:text="Dowload" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/comentarioConteudo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Comentário" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="inserirComentario"
-                    android:text="Comentar" />
+                    android:text="Dowload"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/like"
@@ -129,6 +123,7 @@
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
                         android:text="Likes:"
                         android:textStyle="bold" />
 
@@ -157,6 +152,7 @@
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins"
                         android:text="Dislikes:"
                         android:textStyle="bold" />
 
@@ -168,10 +164,37 @@
                         android:text="TextView" />
                 </LinearLayout>
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="#63adf2"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/comentarioConteudo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Comentário"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#63adf2"
+                    android:fontFamily="@font/poppins"
+                    android:onClick="inserirComentario"
+                    android:text="Comentar"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="Comentários"
                     android:textSize="30sp"
                     android:textStyle="bold" />

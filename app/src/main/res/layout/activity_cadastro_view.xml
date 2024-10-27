@@ -4,86 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".view.CadastroView">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="889dp"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/_729811625224" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:text="NihaoHub"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp">
+            android:layout_marginTop="60dp"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#63adf2"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nomeCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome Completo" />
+                android:hint="Nome Completo"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#63adf2"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email" />
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#63adf2"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/senhaCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Senha"
-                android:password="true" />
+                android:password="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/educadorCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#63adf2"
+            android:fontFamily="@font/poppins"
             android:text="Educador" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutArea"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#63adf2"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/areaCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Área" />
+                android:hint="Área"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutFormacao"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#63adf2"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formacaoCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Formação" />
+                android:hint="Formação"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/checkBoxTermos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#63adf2"
+            android:fontFamily="@font/poppins"
             android:text="Concordo com os termos de uso e políticas de privacidade" />
 
         <LinearLayout
@@ -95,7 +151,9 @@
                 android:id="@+id/textView5"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="Termos de uso:" />
 
@@ -118,6 +176,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="Políticas de privacidade: " />
 
@@ -134,7 +193,11 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#63adf2"
+            android:fontFamily="@font/poppins"
             android:onClick="cadastrarUsuario"
-            android:text="Cadastrar" />
+            android:text="Cadastrar"
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

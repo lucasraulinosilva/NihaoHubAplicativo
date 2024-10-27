@@ -19,6 +19,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.ListMenuItemView;
 
 import com.example.nihaohub.R;
 import com.example.nihaohub.model.Avaliacao;
@@ -44,7 +46,7 @@ import org.checkerframework.checker.units.qual.A;
 
 import java.util.ArrayList;
 
-public class MostrarConteudoController{
+public class MostrarConteudoController extends AppCompatActivity {
     private FirebaseStorage storage = FirebaseStorage.getInstance();;
     private StorageReference storageRef = storage.getReference();;
     private ListView conteudosEducador;
@@ -108,7 +110,7 @@ public class MostrarConteudoController{
                             nome = nome.replaceAll("%C3%A3", "ã");
                             nomesConteudos.add(nome);
                         }
-                        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(activity, android.R.layout.simple_list_item_1, nomesConteudos );
+                        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(activity, R.layout.item_lista, nomesConteudos);
                         conteudosEducador.setAdapter(adaptador);
 
                         conteudosEducador.setOnItemClickListener(new AdapterView.OnItemClickListener() {
