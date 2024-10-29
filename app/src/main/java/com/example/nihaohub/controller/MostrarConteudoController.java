@@ -107,6 +107,11 @@ public class MostrarConteudoController extends AppCompatActivity {
                             StorageReference gsReference = storage.getReferenceFromUrl(String.valueOf(item));
                             String nome = gsReference.getName().replaceAll("%20", " ");
                             nome = nome.replaceAll("%C3%A7", "ç");
+                            nome = nome.replaceAll("%C3%A1", "á");
+                            nome = nome.replaceAll("%C3%A9", "é");
+                            nome = nome.replaceAll("%2C", ",");
+                            nome = nome.replaceAll("%C3%B3", "ó");
+                            nome = nome.replaceAll("%C3%AA", "ê");
                             nome = nome.replaceAll("%C3%A3", "ã");
                             nomesConteudos.add(nome);
                         }
